@@ -1,8 +1,9 @@
-const createDivs = (parent, idName, textContent) => {
+const createDivs = (parent, idName, textContent, className) => {
     const elem = document.createElement('div');
     parent.appendChild(elem);
     elem.setAttribute('id', idName);
     elem.textContent = textContent;
+    elem.classList.add(className);
     return elem;
 };
 
