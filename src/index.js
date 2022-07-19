@@ -1,7 +1,7 @@
 import loadDom from './load-dom';
-import './style.scss';
+import './style.css';
 
 loadDom();
 
 // eslint-disable-next-line no-alert
-alert("I'm working!");
+// alert("I'm working!");

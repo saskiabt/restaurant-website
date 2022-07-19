@@ -1,1 +1,45 @@
+ $background-color: #ffecb3;
+ $neon-sign-color: #fe0508;
+
+
+ body { 
+     margin:0;
+     background-color: $background-color;
+ }
+ #nav {
+     display: flex;
+     flex-direction: row;
+     gap:10px;
+ }
+
+ #header {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     padding: 10px 10px 0px 20px;
+ }
+ 
+#title {
+    font: {
+        family:flirt-script-regular,sans-serif;
+        weight: 600;
+        style: normal;
+        size: 60px;
+    }
+    color: $neon-sign-color;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#interior {
+    width: 80vw;
+    max-width: 850px;
+}
+
+
  

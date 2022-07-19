@@ -18,6 +18,18 @@ module.exports = {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
                 type: 'asset/resource',
             },
+            {
+                test: /\.scss$/,
+                use: [
+                    'style-loader',
+                    'css-loader',
+                    'sass-loader',
+                ],
+            },
         ],
+    },
+    devServer: {
+        static: path.join(__dirname, 'public'),
+        port: 9000,
     },
 };

@@ -1,35 +1,20 @@
 import Icon from './img/interior-gigapixel.png';
+import { createDivs, addImage } from './createDOMElements';
 
 const loadDom = () => {
-    const createDivs = (parent, idName, textContent) => {
-        const elem = document.createElement('div');
-        parent.appendChild(elem);
-        elem.setAttribute('id', idName);
-        elem.textContent = textContent;
-        return elem;
-    };
-
-    const addImage = (parent, id, className, src) => {
-        const image = new Image();
-        image.id = id;
-        image.classList.add(className);
-        parent.appendChild(image);
-        image.src = src;
-        return image;
-    };
-
     const content = document.querySelector('#content');
     const header = createDivs(content, 'header', '');
-    createDivs(header, 'title', "Gordo's");
+    createDivs(header, 'title', "Gordo's Cantina");
     const nav = createDivs(header, 'nav', null);
-    createDivs(nav, 'home', 'Home');
-    createDivs(nav, 'about', 'About');
-    createDivs(nav, 'contact', 'Contact');
-    const main = createDivs(content, 'main', '');
-    createDivs(main, 'main-content', 'Main');
+    createDivs(nav, 'menu-btn', 'Menu');
+    createDivs(nav, 'about-btn', 'About');
+    createDivs(nav, 'contact-btn', 'Contact');
+    const main = createDivs(content, 'main', 'Main');
+    createDivs(main, 'main-content', '');
     addImage(main, 'interior', null, Icon);
-    createDivs(content, 'about', 'About');
-    createDivs(content, 'contact', 'Contact');
+    createDivs(content, 'menu', '');
+    createDivs(content, 'about', '');
+    createDivs(content, 'contact', '');
 };
 
 export default loadDom;
