@@ -1,3 +1,5 @@
+import Icon from './img/interior-gigapixel.png';
+
 const loadDom = () => {
     const createDivs = (parent, idName, textContent) => {
         const elem = document.createElement('div');
@@ -8,11 +10,11 @@ const loadDom = () => {
     };
 
     const addImage = (parent, id, className, src) => {
-        const image = document.createElement('img');
+        const image = new Image();
         image.id = id;
         image.classList.add(className);
-        image.src = src;
         parent.appendChild(image);
+        image.src = src;
         return image;
     };
 
@@ -25,7 +27,7 @@ const loadDom = () => {
     createDivs(nav, 'contact', 'Contact');
     const main = createDivs(content, 'main', '');
     createDivs(main, 'main-content', 'Main');
-    // addImage(main, 'interior', '', '/Users/saskiabinder/repos/restaurant-website/src/img/interior-low_res-scale-4_00x-gigapixel.png');
+    addImage(main, 'interior', null, Icon);
     createDivs(content, 'about', 'About');
     createDivs(content, 'contact', 'Contact');
 };
