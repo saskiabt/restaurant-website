@@ -347,7 +347,7 @@ ul > li:nth-child(1) {
   border-radius: 10px;
   -webkit-transition: ease-in-out 1s;
   transition: ease-in-out 1s;
-  background: #fe050857;
+  background: #ffa981;
   height: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -428,7 +428,7 @@ ul > li:nth-child(1) {
   border-radius: 10px;
   -webkit-transition: ease-in-out 1s;
   transition: ease-in-out 1s;
-  background: #fe050817;
+  background: #ffa981;
 }
 
 #info-wrapper:hover {
@@ -439,7 +439,7 @@ ul > li:nth-child(1) {
 .sticky {
   position: fixed;
   top: 0;
-  width: 95vw;
+  width: 96vw;
 }
 
 .sticky + .content-class {

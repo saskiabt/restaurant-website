@@ -268,7 +268,7 @@ ul {
     -webkit-box-direction: normal;
     border-radius: 10px;
     transition: ease-in-out 1s;
-    background: #fe050857;
+    background: #ffa981;
     height: 100%;
     justify-content: center;
 }
@@ -325,7 +325,7 @@ ul {
     padding: 9.1vmax;
     border-radius: 10px;
     transition: ease-in-out 1s;
-    background: #fe050817;
+    background: #ffa981;
 
     &:hover {
         box-shadow:  inset 11px -13px 0px 11px #feb45591, 
@@ -337,7 +337,7 @@ ul {
 .sticky {
     position: fixed;
     top: 0;
-    width: 95vw;
+    width: 96vw;
 }
   
   .sticky + .content-class {
