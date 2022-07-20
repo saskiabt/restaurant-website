@@ -491,6 +491,9 @@ ul > li:nth-child(1) {
   #contact-content {
     background-color: #ffa981;
   }
+  #about {
+    text-align: center;
+  }
 }
 
 #pw {
