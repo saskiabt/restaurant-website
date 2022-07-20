@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/saskiabt/restaurant-website/issues"
   },
-  "homepage": "https://github.com/saskiabt/restaurant-website#readme",
+  "homepage": "https://saskiabt.github.io/restaurant-website/",
   "devDependencies": {
     "css-loader": "^6.7.1",
     "eslint": "^8.20.0",
