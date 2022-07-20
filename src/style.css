@@ -356,6 +356,11 @@ ul > li:nth-child(1) {
           justify-content: center;
 }
 
+#contact-content:hover {
+  -webkit-box-shadow: inset 11px -13px 0px 11px #feb45591, inset 0 0 0px 20px #d52e3054;
+          box-shadow: inset 11px -13px 0px 11px #feb45591, inset 0 0 0px 20px #d52e3054;
+}
+
 #content-title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -432,11 +437,6 @@ ul > li:nth-child(1) {
   transition: ease-in-out 1s;
 }
 
-#info-wrapper:hover {
-  -webkit-box-shadow: inset 11px -13px 0px 11px #feb45591, inset 0 0 0px 20px #d52e3054;
-          box-shadow: inset 11px -13px 0px 11px #feb45591, inset 0 0 0px 20px #d52e3054;
-}
-
 .sticky {
   position: fixed;
   top: 0;
@@ -489,7 +489,7 @@ ul > li:nth-child(1) {
         grid-template-columns: 1fr 20vmax 1fr;
   }
   #contact-content {
-    background-color: #bcc051ba;
+    background-color: #ffa981;
   }
 }
 
