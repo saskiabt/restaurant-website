@@ -161,6 +161,11 @@ p {
 
 .address {
     cursor: pointer;
+    transition: ease-in-out .2s;
+
+    &:hover {
+        border-bottom: .2px solid black;
+    }
 }
 
 #menu-wrapper {
@@ -185,7 +190,7 @@ ul {
     align-items: center;
     padding-inline-start: 8vmin;
     padding-inline-end: 8vmin;
-    color: $ul-color
+    color: $ul-color;
 
     li {
         font-size: 1rem;
@@ -227,3 +232,84 @@ ul {
 #menu-title {
     font-size: 1.5rem;
 }
+
+// CONTACT PAGE 
+#contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100%;
+    padding-inline-end: 8vmin;
+    padding-inline-start: 8vmin;
+    padding-top: 6.6vmax;
+    gap: 14vh;
+}
+
+#content-title {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-size: 1.3rem;
+}
+
+.info-box {
+    display: flex;
+    flex-direction: row;
+    gap: 6.6vmax;
+    width: 100%;
+}
+
+#logo-wrapper {
+   width: 100%;
+   margin-top: auto;
+    #logo {
+        object-fit: cover;
+        width: 25vmin;
+    }
+}
+
+.contact-info{
+    font-family: letter-gothic-std, monospace;
+    font-weight: 400;
+    font-style: normal;
+    margin-inline-end: .5em;
+    margin-block-end: .5em;
+    display: flex;
+    align-content: flex-end;
+    width: 100%;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+}
+
+#info-wrapper {
+    font-family: letter-gothic-std, monospace;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-box-direction: normal;
+    padding: 9.1vmax;
+    box-shadow: 0 0 3px 5px #6feada00, 
+                inset 11px -13px 0px 11px #d52e30, 
+                inset 0 0 0px 20px #feb455, 
+                inset 2px -1px 6px 9px #495346;
+    border-radius: 10px;
+    transition: ease-in-out 1s;
+
+    &:hover {
+        box-shadow: 0 0 3px 5px #6feada00, 
+        inset 11px -13px 0px 11px #feb455, 
+        inset 0 0 0px 20px #d52e30, 
+        inset 2px -1px 6px 9px #495346;
+
+    }
+}
+
+
+
+
+
+
+
+    
