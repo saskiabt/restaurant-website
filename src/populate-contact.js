@@ -6,7 +6,7 @@ const loadContact = () => {
         const content = document.querySelector('#content');
         const main = createDivs(content, 'contact-content', '', 'content-class');
         createDivs(main, 'content-title', 'CONTACT US!');
-        const info = createDivs(main, 'info-wrapper', '')
+        const info = createDivs(main, 'info-wrapper', '');
         const address = createDivs(info, 'address-box', '', 'info-box');
         createElem('p', address, '140 St Nicholas Ave, Brooklyn, New York 11237', 'contact-info');
         const number = createDivs(info, 'number-box', '', 'info-box');

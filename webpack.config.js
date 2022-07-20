@@ -1,13 +1,5 @@
 const path = require('path');
-
-const productionConfig = merge([
-    {
-        output: {
-            // Tweak this to match your GitHub project name
-            publicPath: '/restaurant-website/',
-        },
-    },
-]);
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: './src/index.js',
@@ -16,6 +8,14 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         clean: true,
     },
+    plugins: [
+        new HtmlWebpackPlugin({
+            hash: true,
+            filename: 'index.html',
+            template: './src/index.html',
+            inject: 'body',
+        }),
+    ],
     mode: 'development',
     module: {
         rules: [

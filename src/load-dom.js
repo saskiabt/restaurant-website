@@ -1,7 +1,9 @@
 import { createDivs } from './createDOMElements';
 
 const loadDom = () => {
-    const content = document.querySelector('#content');
+    // const content = document.querySelector('#content');
+    const body = document.querySelector('body');
+    const content = createDivs(body, 'content', '');
     const header = createDivs(content, 'header', '');
     createDivs(header, 'title', "Gordo's Cantina");
     const nav = createDivs(header, 'nav', null);
