@@ -102,7 +102,7 @@ body {
 
 #about {
   padding-top: 6.6vmax;
-  padding-bottom: 6.6vmax;
+  padding-bottom: 3.3vmax;
   padding-left: 6vw;
   padding-right: 6vw;
 }
@@ -125,6 +125,10 @@ body {
   font-size: 1.3rem;
 }
 
+#about > div > p {
+  font-style: italic;
+}
+
 #hours {
   padding-top: 6.6vmax;
   padding-bottom: 6.6vmax;
@@ -134,5 +138,59 @@ body {
 
 .nav-btn:hover {
   color: #bc6351;
+}
+
+#food-pics-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 3.3vmax;
+  padding-bottom: 6.6vmax;
+  padding-left: 6vw;
+  padding-right: 6vw;
+}
+
+.food-pics {
+  width: 23vw;
+  max-width: 280px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#hours {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #feb455;
+}
+
+#hours #hours-title {
+  font-family: letter-gothic-std, monospace;
+  font-weight: 600;
+  font-size: 1.3rem;
+  border-bottom: .2px solid black;
+}
+
+p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-margin-end: .5em;
+          margin-inline-end: .5em;
+  -webkit-margin-after: .5em;
+          margin-block-end: .5em;
 }
 /*# sourceMappingURL=style.css.map */

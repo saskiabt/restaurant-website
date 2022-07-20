@@ -3,7 +3,7 @@ const createDivs = (parent, idName, textContent, className) => {
     parent.appendChild(elem);
     elem.setAttribute('id', idName);
     elem.textContent = textContent;
-    elem.classList.add(className);
+    if (className !== undefined) elem.classList.add(className);
     return elem;
 };
 
@@ -16,4 +16,11 @@ const addImage = (parent, id, className, src) => {
     return image;
 };
 
-export { createDivs, addImage };
+const createPara = (parent,textContent,className) => {
+    const para = document.createElement('p'); 
+    if (className !== undefined) para.classList.add(className);
+    parent.appendChild(para);
+    para.textContent = textContent;
+};
+
+export { createDivs, addImage, createPara };

@@ -2,6 +2,8 @@
  $neon-sign-color: #fe0508;
  $nav-hover-color: #bc6351;
  $dark-yellow: #feb455;
+ $header-font: letter-gothic-std,monospace;
+ $light-blue: #78f8e799;
 
 
  body { 
@@ -76,7 +78,7 @@
 
 #about {
     padding-top: 6.6vmax;
-    padding-bottom: 6.6vmax;
+    padding-bottom: 3.3vmax;
     padding-left: 6vw;
     padding-right: 6vw;
 
@@ -91,6 +93,10 @@
             font-style: italic;
             font-size: 1.3rem;
 
+        }
+
+        >p {
+            font-style: italic;
         }
     }
 
@@ -108,3 +114,43 @@
         color: $nav-hover-color;
     }
 }
+
+#food-pics-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 3.3vmax;
+    padding-bottom: 6.6vmax;
+    padding-left: 6vw;
+    padding-right: 6vw;
+}
+
+.food-pics {
+    width: 23vw;
+    max-width: 280px;
+    object-fit: cover;
+    // height: 100%;
+    // height: 3vh;
+}
+
+#hours {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: $dark-yellow;
+
+    #hours-title {
+        font-family: $header-font;
+        font-weight: 600;
+        font-size: 1.3rem;
+        border-bottom: .2px solid black;
+    }
+
+}
+
+p {
+    display: flex;
+    margin-inline-end: .5em;
+    margin-block-end: .5em;
+}
+
