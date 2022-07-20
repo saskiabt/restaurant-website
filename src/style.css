@@ -411,6 +411,12 @@ ul > li:nth-child(1) {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
       flex-direction: column;
+  cursor: pointer;
+}
+
+.contact-info:hover {
+  -webkit-text-decoration: .2px solid black underline;
+          text-decoration: .2px solid black underline;
 }
 
 #info-wrapper {
@@ -467,5 +473,9 @@ ul > li:nth-child(1) {
   .sticky {
     margin: 0;
   }
+}
+
+#pw {
+  padding-bottom: 20px;
 }
 /*# sourceMappingURL=style.css.map */
