@@ -1,5 +1,14 @@
 const path = require('path');
 
+const productionConfig = merge([
+    {
+        output: {
+            // Tweak this to match your GitHub project name
+            publicPath: '/restaurant-website/',
+        },
+    },
+]);
+
 module.exports = {
     entry: './src/index.js',
     output: {

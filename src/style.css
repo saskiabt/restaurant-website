@@ -420,4 +420,33 @@ ul > li:nth-child(1) {
 .sticky + .content-class {
   padding-top: 102px;
 }
+
+@media only screen and (max-width: 768px) {
+  #header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px 20px 5px 20px;
+  }
+  #header #title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100vw;
+    font-size: 11vmin;
+  }
+  .sticky {
+    margin: 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */
