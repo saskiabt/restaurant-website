@@ -18,6 +18,12 @@
         style: normal;
      }
  }
+
+ #content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+ }
        
  #nav {
      display: flex;
@@ -189,6 +195,8 @@ p {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 ul {
@@ -201,6 +209,8 @@ ul {
     padding-inline-start: 8vmin;
     padding-inline-end: 8vmin;
     color: $ul-color;
+    transition: ease-in .5s;
+
 
     li {
         font-size: 1rem;
@@ -213,6 +223,7 @@ ul {
         padding-bottom: 1.1vmax;
         color: black;
 
+       
         .item {
             margin-right: auto;
             width: 100%;
@@ -246,13 +257,20 @@ ul {
 // CONTACT PAGE 
 #contact-content {
     display: flex;
+    -webkit-box-orient: vertical;
     flex-direction: column;
+    -webkit-box-align: center;
     align-items: center;
-    gap: 100%;
-    padding-inline-end: 8vmin;
-    padding-inline-start: 8vmin;
-    padding-top: 6.6vmax;
     gap: 10vh;
+    font-family: letter-gothic-std, monospace;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-box-direction: normal;
+    border-radius: 10px;
+    transition: ease-in-out 1s;
+    background: #fe050857;
+    height: 100%;
+    justify-content: center;
 }
 
 #content-title {
@@ -300,16 +318,12 @@ ul {
     font-style: normal;
     -webkit-box-direction: normal;
     padding: 9.1vmax;
-    box-shadow: 0 0 3px 5px #6feada00, 
-                inset 9px -7px 0px 2px #d52e3054, 
-                inset -7px 9px 0px 2px #feb45591, 
-                inset 2px -1px 6px 9px #49534600;
     border-radius: 10px;
     transition: ease-in-out 1s;
+    background: #fe050817;
 
     &:hover {
-        box-shadow: 0 0 3px 5px #00000000, 
-        inset 11px -13px 0px 11px #feb45591, 
+        box-shadow:  inset 11px -13px 0px 11px #feb45591, 
         inset 0 0 0px 20px #d52e3054, 
     }
 }

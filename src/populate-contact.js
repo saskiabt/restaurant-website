@@ -8,7 +8,10 @@ const loadContact = () => {
         createDivs(main, 'content-title', 'CONTACT US!');
         const info = createDivs(main, 'info-wrapper', '');
         const address = createDivs(info, 'address-box', '', 'info-box');
-        createElem('p', address, '140 St Nicholas Ave, Brooklyn, New York 11237', 'contact-info');
+        const clickMe = createElem('p', address, '140 St Nicholas Ave, Brooklyn, New York 11237', 'contact-info');
+        clickMe.addEventListener('click', () => {
+            window.open('https://g.page/gordoscantina?share', 'blank');
+        });
         const number = createDivs(info, 'number-box', '', 'info-box');
         createElem('p', number, '(917)-947-9208', 'contact-info');
         const email = createDivs(info, 'email-box', '', 'info-box');
