@@ -337,7 +337,7 @@ ul {
 .sticky {
     position: fixed;
     top: 0;
-    width: 100%
+    width: 95vw;
 }
   
   .sticky + .content-class {
@@ -355,6 +355,7 @@ $desktop: 1024px;
         flex-direction: column;
         align-items: center;
         padding: 20px 20px 5px 20px;
+        width: 100vw;
 
         #title {
             // display: flex;

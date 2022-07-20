@@ -439,7 +439,7 @@ ul > li:nth-child(1) {
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 95vw;
 }
 
 .sticky + .content-class {
@@ -459,6 +459,7 @@ ul > li:nth-child(1) {
         -ms-flex-align: center;
             align-items: center;
     padding: 20px 20px 5px 20px;
+    width: 100vw;
   }
   #header #title {
     display: -webkit-box;
