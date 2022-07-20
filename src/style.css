@@ -206,5 +206,16 @@ ul {
 
 ul li {
   font-size: 1rem;
+  list-style-type: none;
+}
+
+#menu-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*# sourceMappingURL=style.css.map */

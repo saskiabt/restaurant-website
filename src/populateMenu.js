@@ -52,11 +52,11 @@ const loadMenu = () => {
 };
 
 const hideMenu = () => {
-    document.querySelector('#menu-wrapper').style.display = 'none';
+    document.querySelector('#menu-wrapper').remove(); 
 };
 
-const showMenu = () => {
-    document.querySelector('#menu-wrapper').style.display = 'flex';
-};
+// const showMenu = () => {
+//     document.querySelector('#menu-wrapper').style.display = 'flex';
+// };
 
-export { loadMenu, hideMenu, showMenu };
+export { loadMenu, hideMenu };

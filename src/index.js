@@ -13,5 +13,5 @@ document.querySelector('#menu-btn').addEventListener('click', () => {
 
 document.querySelector("#home-btn").addEventListener('click', () => {
     hideMenu();
-    showMainPage();
+    loadMainPage();
 });

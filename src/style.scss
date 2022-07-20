@@ -166,6 +166,12 @@ ul {
 
     li {
         font-size: 1rem;
+        list-style-type: none;
         
     }
+}
+
+#menu-wrapper {
+    display: flex;
+    flex-direction: column;
 }

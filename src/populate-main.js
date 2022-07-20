@@ -39,11 +39,11 @@ const loadMainPage = () => {
 };
 
 const hideMainPage = () => {
-    document.querySelector('#main').style.display = 'none';
+    document.querySelector('#main').remove();
 };
 
-const showMainPage = () => {
-    document.querySelector('#main').style.display = 'flex';
-};
+// const showMainPage = () => {
+//     document.querySelector('#main').style.display = 'flex';
+// };
 
-export { loadMainPage, hideMainPage, showMainPage };
+export { loadMainPage, hideMainPage };
