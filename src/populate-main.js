@@ -7,7 +7,7 @@ import imgSix from './img/6.png';
 const loadMainPage = () => {
     if (!document.querySelector('#main')) {
         const content = document.querySelector('#content');
-        const main = createDivs(content, 'main', '');
+        const main = createDivs(content, 'main', '', 'content-class');
         const mainContent = createDivs(main, 'main-content', '');
 
         const interiorWrapper = createDivs(mainContent, 'image-wrapper', '');
@@ -36,9 +36,6 @@ const loadMainPage = () => {
         createElem('p', hours, 'Thurs 12:00 - 10:00', 'hour');
         createElem('p', hours, 'Fri-Sat 12:00 - 11:00', 'hour');
         createElem('p', hours, 'Sun 12:00 - 9:00', 'hour');
-
-        // const footer = createDivs(content, 'footer', '');
-        // addImage(footer, 'logo', null, Logo);
     }
 };
 

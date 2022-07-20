@@ -1,9 +1,10 @@
 import { createDivs, addImage, createElem } from './createDOMElements';
+// const createDivs = (parent, idName, textContent, className) => {
 
 const loadContact = () => {
     if (!document.querySelector('#contact-content')) {
         const content = document.querySelector('#content');
-        const main = createDivs(content, 'contact-content', '');
+        const main = createDivs(content, 'contact-content', '', 'content-class');
         createDivs(main, 'content-title', 'CONTACT US!');
         const info = createDivs(main, 'info-wrapper', '')
         const address = createDivs(info, 'address-box', '', 'info-box');

@@ -24,7 +24,7 @@ const loadMenu = () => {
             { item: 'Enchiladas Suizas Plato', description: 'Traditional enchiladas Verde stuffed with shredded chicken and melted cheese blend.Comes with a side of rice and beans', price: '19.00' },
             { item: 'Enchiladas Vegetariana', description: 'Cremini mushrooms, leeks, fennel and tomatillo salsa. ***With side of rice and beans', price: '21.00' },
         ];
-        const menu = createDivs(content, 'menu-wrapper', '');
+        const menu = createDivs(content, 'menu-wrapper', '', 'content-class');
         // createDivs(menu,'menu-title','Menu', 'para-heading');
 
         const mw = createDivs(menu, 'mw', '', 'menu-item-wrapper');
