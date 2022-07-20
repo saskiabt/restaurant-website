@@ -16,12 +16,12 @@ const addImage = (parent, id, className, src) => {
     return image;
 };
 
-const createPara = (parent,textContent,className) => {
-    const para = document.createElement('p'); 
+const createElem = (type, parent, textContent, className) => {
+    const para = document.createElement(type);
     if (className !== undefined) para.classList.add(className);
     parent.appendChild(para);
     para.textContent = textContent;
     return para;
 };
 
-export { createDivs, addImage, createPara };
+export { createDivs, addImage, createElem };

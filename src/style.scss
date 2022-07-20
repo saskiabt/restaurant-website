@@ -4,6 +4,7 @@
  $dark-yellow: #feb455;
  $header-font: letter-gothic-std,monospace;
  $light-blue: #6feada61;
+ $green:#bcc051ba;
 
 
  body { 
@@ -137,7 +138,7 @@
     display:flex;
     align-items: center;
     flex-direction: column;
-    background-color: $light-blue;
+    background-color: $green;
 
     #hours-title {
         font-family: $header-font;
@@ -156,4 +157,15 @@ p {
 
 .address {
     cursor: pointer;
+}
+
+ul {
+    font-family: $header-font;
+    font-weight: 600;
+    font-size: 1.3rem;
+
+    li {
+        font-size: 1rem;
+        
+    }
 }

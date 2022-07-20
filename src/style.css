@@ -174,7 +174,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #6feada61;
+  background-color: #bcc051ba;
 }
 
 #hours #hours-title {
@@ -196,5 +196,15 @@ p {
 
 .address {
   cursor: pointer;
+}
+
+ul {
+  font-family: letter-gothic-std, monospace;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+ul li {
+  font-size: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
