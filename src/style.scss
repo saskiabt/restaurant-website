@@ -268,7 +268,7 @@ ul {
     font-weight: 400;
     font-style: normal;
     -webkit-box-direction: normal;
-    border-radius: 10px;
+    // border-radius: 10px;
     transition: ease-in-out 1s;
     background: #ffa981;
     height: 100%;
@@ -327,7 +327,7 @@ ul {
     padding: 9.1vmax;
     border-radius: 10px;
     transition: ease-in-out 1s;
-    background: #ffa981;
+    // background: #ffa981;
 
     &:hover {
         box-shadow:  inset 11px -13px 0px 11px #feb45591, 
@@ -352,6 +352,9 @@ $phone: 640px;
 $desktop: 1024px;
 
 @media only screen and (max-width: $tablet) {
+    body {
+        justify-content: center;
+    }
     #header {
         display: flex;
         flex-direction: column;
@@ -359,6 +362,7 @@ $desktop: 1024px;
         padding: 0px;
         padding-top: 15px;
         width: 100vw;
+        padding-bottom: 10px;
 
         #title {
             // display: flex;
@@ -372,8 +376,18 @@ $desktop: 1024px;
         }
     }
 
-    .sticky {
-        margin:0
+    #menu-wrapper {
+        font-size: 1em;
+    }
+
+    ul > li {
+        font-size: .8rem;
+        gap: 3vmin; 
+        grid-template-columns: 1fr 20vmax 1fr;
+    }
+
+    #contact-content {
+        background-color: $green;
     }
 }
 
