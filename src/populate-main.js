@@ -16,7 +16,7 @@ const loadMainPage = () => {
     const about = createDivs(mainContent, 'about', '');
     // addImage(about, 'about-logo', null, Logo);
     const aboutInfoWrapper = createDivs(about, '', '');
-    createDivs(aboutInfoWrapper, 'welcome', "Gordo's of Bushwick");
+    createDivs(aboutInfoWrapper, 'welcome', "Gordo's of Bushwick", 'para-heading');
     createDivs(aboutInfoWrapper, 'blurb', 'Bringing Mexican food in its most original and simple form to New York. Mimicking the traditional food of Central Mexico.\nIndoor & Outdoor Dining. Open 7 days a week. No Reservations, just walk in!');
     const address = createElem('p', aboutInfoWrapper, '140 St Nicholas Ave, Brooklyn, New York 11237', 'address');
     address.addEventListener('click', () => {

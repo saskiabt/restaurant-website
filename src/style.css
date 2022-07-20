@@ -16,6 +16,7 @@ body {
           flex-direction: row;
   gap: 10px;
   font-weight: 600;
+  cursor: pointer;
 }
 
 #header {
@@ -198,17 +199,6 @@ p {
   cursor: pointer;
 }
 
-ul {
-  font-family: letter-gothic-std, monospace;
-  font-weight: 600;
-  font-size: 1.3rem;
-}
-
-ul li {
-  font-size: 1rem;
-  list-style-type: none;
-}
-
 #menu-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -217,5 +207,88 @@ ul li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-item-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+ul {
+  font-family: letter-gothic-std, monospace;
+  font-weight: 600;
+  font-size: 1.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-padding-start: 8vmin;
+          padding-inline-start: 8vmin;
+  -webkit-padding-end: 8vmin;
+          padding-inline-end: 8vmin;
+}
+
+ul li {
+  font-size: 1rem;
+  list-style-type: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30vmax 1fr;
+      grid-template-columns: 1fr 30vmax 1fr;
+  grid-auto-rows: minmax(30px, auto);
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 5vmax;
+  padding-bottom: 1.1vmax;
+}
+
+ul li > .item {
+  margin-right: auto;
+  width: 100%;
+  justify-self: flex-start;
+  text-align: end;
+  font-weight: 700;
+}
+
+ul li > .price {
+  margin-left: auto;
+  width: 100%;
+}
+
+ul li > .description {
+  margin: auto;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  width: 100%;
+}
+
+ul > li:nth-child(1) {
+  padding-top: 3.3vmax;
+}
+
+#menu-title {
+  font-size: 1.5rem;
 }
 /*# sourceMappingURL=style.css.map */

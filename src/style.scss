@@ -5,6 +5,8 @@
  $header-font: letter-gothic-std,monospace;
  $light-blue: #6feada61;
  $green:#bcc051ba;
+ $dark-green-item-color: #495346;
+ $ul-color: #a6034d;
 
 
  body { 
@@ -25,6 +27,8 @@
      font: {
          weight: 600;
      }
+
+     cursor:pointer;
  }
 
  #header {
@@ -159,19 +163,67 @@ p {
     cursor: pointer;
 }
 
+#menu-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-item-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
 ul {
     font-family: $header-font;
     font-weight: 600;
     font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline-start: 8vmin;
+    padding-inline-end: 8vmin;
+    color: $ul-color
 
     li {
         font-size: 1rem;
         list-style-type: none;
+        display: grid;
+        grid-template-columns: 1fr 30vmax 1fr;
+        grid-auto-rows: minmax(30px, auto);
+        flex-direction: row;
+        gap: 5vmax;
+        padding-bottom: 1.1vmax;
+        color: black;
+
+        .item {
+            margin-right: auto;
+            width: 100%;
+            justify-self: flex-start;
+            text-align: end;
+            font-weight: 700;
+        }
         
+        .price {
+            margin-left: auto;
+            width: 100%;
+        }
+        
+       .description {
+            margin: auto;
+            align-self: flex-start;
+            width: 100%;
+
+        }
+    }
+
+    > li:nth-child(1){
+        padding-top: 3.3vmax;
     }
 }
 
-#menu-wrapper {
-    display: flex;
-    flex-direction: column;
+#menu-title {
+    font-size: 1.5rem;
 }
