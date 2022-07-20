@@ -174,7 +174,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #feb455;
+  background-color: #6feada61;
 }
 
 #hours #hours-title {
@@ -192,5 +192,9 @@ p {
           margin-inline-end: .5em;
   -webkit-margin-after: .5em;
           margin-block-end: .5em;
+}
+
+.address {
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

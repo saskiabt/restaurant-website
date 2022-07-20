@@ -3,7 +3,7 @@
  $nav-hover-color: #bc6351;
  $dark-yellow: #feb455;
  $header-font: letter-gothic-std,monospace;
- $light-blue: #78f8e799;
+ $light-blue: #6feada61;
 
 
  body { 
@@ -137,7 +137,7 @@
     display:flex;
     align-items: center;
     flex-direction: column;
-    background-color: $dark-yellow;
+    background-color: $light-blue;
 
     #hours-title {
         font-family: $header-font;
@@ -154,3 +154,6 @@ p {
     margin-block-end: .5em;
 }
 
+.address {
+    cursor: pointer;
+}

@@ -21,6 +21,7 @@ const createPara = (parent,textContent,className) => {
     if (className !== undefined) para.classList.add(className);
     parent.appendChild(para);
     para.textContent = textContent;
+    return para;
 };
 
 export { createDivs, addImage, createPara };
