@@ -1,4 +1,4 @@
-import { createDivs, addImage, createElem } from './createDOMElements';
+import { createDivs, createElem } from './createDOMElements';
 
 const loadMenu = () => {
     if (!document.querySelector('#menu-wrapper')) {

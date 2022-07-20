@@ -1,4 +1,4 @@
-import { createDivs, addImage, createElem } from './createDOMElements';
+import { createDivs, createElem } from './createDOMElements';
 // const createDivs = (parent, idName, textContent, className) => {
 
 const loadContact = () => {

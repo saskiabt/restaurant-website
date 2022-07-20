@@ -7,7 +7,7 @@ import './style.css';
 
 loadDom();
 loadMainPage();
-window.addEventListener('scroll', stickyHeader); 
+window.addEventListener('scroll', stickyHeader);
 
 document.querySelector('#menu-btn').addEventListener('click', () => {
     hideMainPage();
