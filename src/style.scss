@@ -337,7 +337,8 @@ ul {
 .sticky {
     position: fixed;
     top: 0;
-    width: 95vw;
+    width: 100vw;
+    right: 0px;
 }
   
   .sticky + .content-class {
