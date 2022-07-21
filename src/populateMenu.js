@@ -1,12 +1,12 @@
 import { createDivs, createElem } from './createDOMElements';
 
-const loadMenu = () => {
-    function Foods(item, description, price) {
-        this.item = item;
-        this.description = description;
-        this.price = price;
-    }
+function Foods(item, description, price) {
+    this.item = item;
+    this.description = description;
+    this.price = price;
+}
 
+const loadMenu = () => {
     if (!document.querySelector('#menu-wrapper')) {
         const content = document.querySelector('#content');
         const apps = [
@@ -30,7 +30,7 @@ const loadMenu = () => {
             new Foods('Enchiladas Suizas Plato', 'Traditional enchiladas Verde stuffed with shredded chicken and melted cheese blend.Comes with a side of rice and beans', '19.00'),
             new Foods('Enchiladas Vegetariana', 'Cremini mushrooms, leeks, fennel and tomatillo salsa. ***With side of rice and beans', '21.00'),
         ];
-        
+
         const menu = createDivs(content, 'menu-wrapper', '', 'content-class');
         const mw = createDivs(menu, 'mw', '', 'menu-item-wrapper');
         createDivs(mw, 'mw-title', 'Appetizers', 'list-header');
