@@ -285,6 +285,8 @@ ul {
   color: #a6034d;
   -webkit-transition: ease-in .5s;
   transition: ease-in .5s;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
 }
 
 ul li {
@@ -502,5 +504,17 @@ ul > li:nth-child(1) {
 
 #pw {
   padding-bottom: 20px;
+}
+
+.list-header {
+  font-size: 1.2em;
+  -webkit-transition: ease-in .4s;
+  transition: ease-in .4s;
+}
+
+.list-header:hover {
+  text-decoration: underline;
+  background-color: #495346;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

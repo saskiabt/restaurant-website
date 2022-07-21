@@ -212,6 +212,7 @@ ul {
     padding-inline-end: 8vmin;
     color: $ul-color;
     transition: ease-in .5s;
+    margin-block-start: 0;
 
 
     li {
@@ -407,6 +408,15 @@ $desktop: 1024px;
 }
 
 
+.list-header {
+    font-size: 1.2em;
+    transition: ease-in .4s;
 
+    &:hover {
+        text-decoration: underline;
+        background-color: $dark-green-item-color;
+        color: white;
+    }
+}
 
     

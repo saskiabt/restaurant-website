@@ -28,7 +28,8 @@ const loadMenu = () => {
         // createDivs(menu,'menu-title','Menu', 'para-heading');
 
         const mw = createDivs(menu, 'mw', '', 'menu-item-wrapper');
-        const appetizers = createElem('ul', mw, 'Appetizers', 'list-header');
+        createDivs(mw, 'mw-title', 'Appetizers', 'list-header');
+        const appetizers = createElem('ul', mw, '');
         for (let i = 0; i < apps.length; i++) {
             const listItem = createElem('li', appetizers, '', 'list-item');
             createElem('span', listItem, apps[i].item, 'item');
@@ -37,7 +38,8 @@ const loadMenu = () => {
         }
 
         const tw = createDivs(menu, 'tw', '', 'menu-item-wrapper');
-        const tacoWrapper = createElem('ul', tw, 'Tacos', 'list-header');
+        createDivs(tw, 'tw-title', 'Tacos', 'list-header');
+        const tacoWrapper = createElem('ul', tw, '');
         for (let i = 0; i < tacos.length; i++) {
             const listItem = createElem('li', tacoWrapper, '', 'list-item');
             createElem('span', listItem, tacos[i].item, 'item');
@@ -46,8 +48,8 @@ const loadMenu = () => {
         }
 
         const pw = createDivs(menu, 'pw', '', 'menu-item-wrapper');
-
-        const plateWrapper = createElem('ul', pw, 'Plates', 'list-header');
+        createDivs(pw, 'pw-title', 'Plates', 'list-header');
+        const plateWrapper = createElem('ul', pw, '');
         for (let i = 0; i < plates.length; i++) {
             const listItem = createElem('li', plateWrapper, '', 'list-item');
             createElem('span', listItem, plates[i].item, 'item');
