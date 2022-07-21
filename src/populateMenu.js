@@ -1,32 +1,37 @@
 import { createDivs, createElem } from './createDOMElements';
 
 const loadMenu = () => {
+    function Foods(item, description, price) {
+        this.item = item;
+        this.description = description;
+        this.price = price;
+    }
+
     if (!document.querySelector('#menu-wrapper')) {
         const content = document.querySelector('#content');
         const apps = [
-            { item: 'Salsas', description: 'Four House Salsas with Homemade chips', price: '7.00' },
-            { item: 'Guac', description: 'Abuela’s secret recipe and housemade tortilla chips', price: '14.00' },
-            { item: 'Elote', description: 'Grilled corn, homemade crema chili and lime.', price: '7.00' },
-            { item: 'El Chapo', description: 'Bacon wrapped Jumbo beef hot dog, homemade crema and pico de gallo.', price: '$8.00' },
-            { item: 'Shrimp Cocktail', description: 'Black Tiger Shrimp with citrus tomato sauce served with homemade chips', price: '16.00' },
-            { item: 'Flautas', description: 'Three rolled fried tacos stuffed with queso fresco, fried, served in salsa verde topped with crema and shredded cheese', price: '14.00' },
+            new Foods('Salsas', 'Four House Salsas with Homemade chips', '7.00'),
+            new Foods('Guac', 'Abuela’s secret recipe and housemade tortilla chips', '14.00'),
+            new Foods('Elote', 'Grilled corn, homemade crema chili and lime.', '7.00'),
+            new Foods('El Chapo', 'Bacon wrapped Jumbo beef hot dog, homemade crema and pico de gallo.', '$8.00'),
+            new Foods('Shrimp Cocktail', 'Black Tiger Shrimp with citrus tomato sauce served with homemade chips', '16.00'),
+            new Foods('Flautas', 'Three rolled fried tacos stuffed with queso fresco, fried, served in salsa verde topped with crema and shredded cheese', '14.00'),
         ];
 
         const tacos = [
-            { item: 'Tacos Mixtos', description: 'Select 4 meats for your tacos. Extra order of tortillas recommended.', price: '16.00' },
-            { item: 'Pollo Tacos', description: 'Three shredded chicken tacos topped with pico de gallo.', price: '13.00' },
-            { item: 'Arrachera Tacos', description: 'Grilled marinated diced steak.** Served with cilantro and onion', price: '13.00' },
+            new Foods('Tacos Mixtos', 'Select 4 meats for your tacos. Extra order of tortillas recommended.', '16.00'),
+            new Foods('Pollo Tacos', 'Three shredded chicken tacos topped with pico de gallo.', '13.00'),
+            new Foods('Arrachera Tacos', 'Grilled marinated diced steak.** Served with cilantro and onion', '13.00'),
         ];
 
         const plates = [
-            { item: 'Chile Relleno Plato', description: 'Poblano pepper stuffed with Oaxaca cheese, pinto beans and tomato based sauce. Comes with rice and beans', price: '20.00' },
-            { item: 'Chile Relleno Plato', description: 'Poblano pepper stuffed with Oaxaca cheese, pinto beans and tomato based sauce. Comes with rice and beans', price: '20.00' },
-            { item: 'Enchiladas Suizas Plato', description: 'Traditional enchiladas Verde stuffed with shredded chicken and melted cheese blend.Comes with a side of rice and beans', price: '19.00' },
-            { item: 'Enchiladas Vegetariana', description: 'Cremini mushrooms, leeks, fennel and tomatillo salsa. ***With side of rice and beans', price: '21.00' },
+            new Foods('Chile Relleno Plato', 'Poblano pepper stuffed with Oaxaca cheese, pinto beans and tomato based sauce. Comes with rice and beans', '20.00'),
+            new Foods('Chile Relleno Plato', 'Poblano pepper stuffed with Oaxaca cheese, pinto beans and tomato based sauce. Comes with rice and beans', '20.00'),
+            new Foods('Enchiladas Suizas Plato', 'Traditional enchiladas Verde stuffed with shredded chicken and melted cheese blend.Comes with a side of rice and beans', '19.00'),
+            new Foods('Enchiladas Vegetariana', 'Cremini mushrooms, leeks, fennel and tomatillo salsa. ***With side of rice and beans', '21.00'),
         ];
+        
         const menu = createDivs(content, 'menu-wrapper', '', 'content-class');
-        // createDivs(menu,'menu-title','Menu', 'para-heading');
-
         const mw = createDivs(menu, 'mw', '', 'menu-item-wrapper');
         createDivs(mw, 'mw-title', 'Appetizers', 'list-header');
         const appetizers = createElem('ul', mw, '');
