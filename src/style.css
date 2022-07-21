@@ -477,7 +477,11 @@ ul > li:nth-child(1) {
         -ms-flex-pack: center;
             justify-content: center;
     width: 100vw;
-    font-size: 11vmin;
+    font-size: 12vmin;
+  }
+  #header #nav {
+    font-size: 1.2rem;
+    gap: 20px;
   }
   #menu-wrapper {
     font-size: 1em;

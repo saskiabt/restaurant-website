@@ -373,7 +373,12 @@ $desktop: 1024px;
             display: flex;
             justify-content: center;
             width: 100vw;
-            font-size: 11vmin;
+            font-size: 12vmin;
+        }
+
+        #nav {
+            font-size: 1.2rem;
+            gap: 20px ;
         }
     }
 
