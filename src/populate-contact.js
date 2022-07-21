@@ -27,7 +27,6 @@ const loadContact = () => {
     }
 };
 
-
 const hideContact = () => {
     if (document.querySelector('#contact-content')) document.querySelector('#contact-content').remove();
 };
