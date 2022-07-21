@@ -351,7 +351,7 @@ ul > li:nth-child(1) {
   -webkit-box-direction: normal;
   -webkit-transition: ease-in-out 1s;
   transition: ease-in-out 1s;
-  background: #ffa981;
+  background: #ffa98163;
   height: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -493,9 +493,6 @@ ul > li:nth-child(1) {
     gap: 3vmin;
     -ms-grid-columns: 1fr 20vmax 1fr;
         grid-template-columns: 1fr 20vmax 1fr;
-  }
-  #contact-content {
-    background-color: #ffa981;
   }
   #about {
     text-align: center;

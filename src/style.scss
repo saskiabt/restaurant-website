@@ -7,6 +7,7 @@
  $green:#bcc051ba;
  $dark-green-item-color: #495346;
  $ul-color: #a6034d;
+ $contact-page-background: #ffa98163;
 
 
  body { 
@@ -271,7 +272,7 @@ ul {
     -webkit-box-direction: normal;
     // border-radius: 10px;
     transition: ease-in-out 1s;
-    background: #ffa981;
+    background: #ffa98163;
     height: 100%;
     justify-content: center;
 
@@ -393,10 +394,6 @@ $desktop: 1024px;
         grid-template-columns: 1fr 20vmax 1fr;
     }
 
-    #contact-content {
-        background-color: #ffa981;
-    }
-
     #about {
         text-align: center;
     }
@@ -405,7 +402,7 @@ $desktop: 1024px;
 
 #pw {
     padding-bottom: 20px;
-}
+} 
 
 
 .list-header {
