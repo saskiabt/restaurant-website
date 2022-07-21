@@ -186,10 +186,11 @@ body {
 }
 
 #food-pics-wrapper .food-pics:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   -webkit-box-shadow: 0px 1px 6px 0px #4f3b3b;
           box-shadow: 0px 1px 6px 0px #4f3b3b;
+  opacity: 90%;
 }
 
 #hours {
@@ -344,7 +345,6 @@ ul > li:nth-child(1) {
   -webkit-box-align: center;
   -ms-flex-align: center;
       align-items: center;
-  gap: 10vh;
   font-family: letter-gothic-std, monospace;
   font-weight: 400;
   font-style: normal;
@@ -376,6 +376,13 @@ ul > li:nth-child(1) {
           align-items: center;
   width: 100%;
   font-size: 1.3rem;
+  -webkit-transition: ease-in-out .4s;
+  transition: ease-in-out .4s;
+}
+
+#content-title:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .info-box {
@@ -513,5 +520,30 @@ ul > li:nth-child(1) {
   text-decoration: underline;
   background-color: #495346;
   color: white;
+}
+
+#tag-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#tag-wrapper #tag-wrapper > p:nth-child(2) {
+  cursor: pointer;
+}
+
+#tag-wrapper #source-code {
+  cursor: pointer;
+}
+
+#tag-wrapper #source-code:hover {
+  text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */
