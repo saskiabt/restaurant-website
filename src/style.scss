@@ -441,11 +441,11 @@ $desktop: 1024px;
     font-size: 1.2em;
     transition: ease-in .4s;
 
-    &:hover {
-        text-decoration: underline;
-        background-color: $dark-green-item-color;
-        color: white;
-    }
+    // &:hover {
+    //     text-decoration: underline;
+    //     background-color: $dark-green-item-color;
+    //     color: white;
+    // }
 };
 
 #tag-wrapper {
@@ -464,10 +464,4 @@ $desktop: 1024px;
             text-decoration: underline;
         }
     }
-}
-
-
-.underline { 
-    border-bottom: 1px solid white;
-    background-color: #495346;
 }
