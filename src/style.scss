@@ -1,3 +1,5 @@
+//  @import '/src/animations.scss'; 
+
  $background-color: #ffecb3;
  $neon-sign-color: #fe0508;
  $nav-hover-color: #bc6351;
@@ -72,7 +74,31 @@
     height: 100%;
     // max-width: 850px;
     max-height: 750px;
+    // animation-name: slideDown;
+    // animation-duration: 2s;
+    // animation-iteration-count: 1;
+    // animation-timing-function: ease-in;
+
+    &:hover {
+        animation-name: slideDown;
+        animation-duration: .5s;
+    }
 }
+
+
+// @keyframes slideDown {
+// //    0% {margin-top: -100%;}
+// //    25% {margin-top: -75%;}
+// //    50% {margin-top: -50%;}
+// //    75% {margin-top: -25%;}
+// //    100% {margin-top: 0%;}
+//     0% {
+//         transform: rotate(0);
+//     }
+//     100% {
+//         transform: rotate(360deg);
+//     }
+// }
 
 #main {
     display: flex;
@@ -440,4 +466,8 @@ $desktop: 1024px;
     }
 }
 
-    
+
+.underline { 
+    border-bottom: 1px solid white;
+    background-color: #495346;
+}

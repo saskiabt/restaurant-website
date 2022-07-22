@@ -1,6 +1,6 @@
 import loadDom from './load-dom';
 import { loadMainPage, hideMainPage } from './populate-main';
-import { loadMenu, hideMenu } from './populateMenu';
+import { loadMenu, hideMenu, underlineTitle } from './populateMenu';
 import { loadContact, hideContact } from './populate-contact';
 import stickyHeader from './sticky-header';
 import './style.css';
@@ -13,6 +13,7 @@ document.querySelector('#menu-btn').addEventListener('click', () => {
     hideMainPage();
     hideContact();
     loadMenu();
+    underlineTitle();
 });
 
 document.querySelector('#home-btn').addEventListener('click', () => {

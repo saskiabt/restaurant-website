@@ -1,0 +1,16 @@
+@-webkit-keyframes slideDown {
+  from {
+    margin-top: -100%;
+  }
+  to {
+    margin-top: 0%;
+  }
+}
+@keyframes slideDown {
+  from {
+    margin-top: -100%;
+  }
+  to {
+    margin-top: 0%;
+  }
+}/*# sourceMappingURL=animations.css.map */

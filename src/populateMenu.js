@@ -64,8 +64,22 @@ const loadMenu = () => {
     }
 };
 
+function underlineTitle() {
+    const ul = document.querySelectorAll('.menu-item-wrapper');
+    console.log(ul);
+    ul.forEach((element) => {
+        element.addEventListener('mouseenter', () => {
+            element.firstChild.style.textDecoration = 'underline';
+        });
+
+        element.addEventListener('mouseleave', () => {
+            element.firstChild.style.textDecoration = 'none';
+        });
+    });
+}
+
 function hideMenu() {
     if (document.querySelector('#menu-wrapper')) { document.querySelector('#menu-wrapper').remove(); }
 }
 
-export { loadMenu, hideMenu };
+export { loadMenu, hideMenu, underlineTitle };
